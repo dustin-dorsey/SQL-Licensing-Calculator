@@ -1,5 +1,7 @@
 The following is a list of all of the parameters that are available to be used with this script with a brief description of each. It also lists which parameters are optional and what the possible values for each are.
 
+You can also view this online at - https://dustindorsey.com/sql-licensing-calculator-parameters/
+
 @ServerType – This specifies what type of server you are licensing. You can use VM for virtual machines, Physical for physical servers, Host to license all virtual hosts or Container to license containers.
 
 @LicenseMethod – This specifies how you want to license the server type. Use Core if you want to license by cores or CAL if you want to license by Device or User CALs
