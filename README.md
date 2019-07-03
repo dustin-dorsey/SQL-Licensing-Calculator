@@ -6,8 +6,6 @@ You can view more information about this tool by visiting - https://dustindorsey
 
 Disclaimer: By using this tool you agree to do so at your own risk and understand this is not something created by or representative of Microsoft. I highly encourage your to read through the SQL licensing guides and continue working with your licensing providers. Based on years of experience, working with Microsoft and licensed re-sellers on licensing and careful review of the licensing guides I believe the information contained in this is correct, however, its possible something could be wrong. My intention is not to deceive anyone with any misinformation and will gladly receive feedback and update this as information is verified. This tool is not a replacement for determining exact costs and may not cover everything specific to your agreement, rather it is a tool that can be used to help in your decision making.
 
-Click here to download a copy of the SQL 2017 licensing guide or click here to download a copy of the SQL 2017 licensing datasheet (condensed version)
-
 Requirements: The script must be ran on a SQL 2008 or later version. Once created the only permission that is needed is EXECUTE rights on the stored proc.
 
 Existing Limitations of this tool:
