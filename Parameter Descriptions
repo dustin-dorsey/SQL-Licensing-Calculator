@@ -29,3 +29,4 @@ The following is a list of all of the parameters that are available to be used w
 @CALSACost – (optional parameter) If you know what your CAL software assurance cost is based on your agreement, you can enter it here. If you do not specify this, it will use MSRP\estimated costs. If software assurance cost is baked into your license cost, then select 0 for this value.
 
 @Override – (optional parameter) If you want to ignore the rules and checks that occur, then set this value to 1. You may want to consider using this if your licensing agreement allows you to license ways differently then what is in the licensing guide. If this is turned on, you will only return your build information with a cost.
+ 
