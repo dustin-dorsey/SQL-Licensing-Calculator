@@ -1,5 +1,7 @@
 There are several different ways that you can analyze your licenses, but I have listed a variety of examples that helps you get an idea of the possibilities. 
 
+You can also view this online by visiting - https://dustindorsey.com/sql-licensing-calculator-examples/
+
 This is an example of licensing your hosts by physical cores with software assurance and custom pricing. 
 
 Exec dbo.sp_licensingcalculator
