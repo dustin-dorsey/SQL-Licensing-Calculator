@@ -1,0 +1,76 @@
+There are several different ways that you can analyze your licenses, but I have listed a variety of examples that helps you get an idea of the possibilities. 
+
+This is an example of licensing your hosts by physical cores with software assurance and custom pricing. 
+
+Exec dbo.sp_licensingcalculator
+@ServerType = 'Host'
+,@LicenseMethod = 'Core'
+,@SQLEdition = 'Enterprise'
+,@SQLVersion = '2017'
+,@SoftwareAssurance = 'Y'
+,@CoreNumber = 16
+,@CoreLicenseCost = 14000
+,@CoreSACost = 3000
+
+This is an example of licensing your individual virtual machines by cores. This is for a cluster build and includes software assurance, custom costs, and a review of memory allocation.
+
+Exec dbo.sp_licensingcalculator
+@ServerType = 'VM'
+,@LicenseMethod = 'Core'
+,@SQLEdition = 'Standard'
+,@SQLVersion = '2016'
+,@HighAvailability = 'Cluster'
+,@SoftwareAssurance = 'Y'
+,@MaxMemoryMB = 56000
+,@CoreNumber = 8
+,@CoreLicenseCost = 3900
+,@CoreSACost = 800
+
+This is an example of licensing a physical server by physical cores. This is for an AG build and does not include software assurance and custom costs (estimated costs are used).
+
+Exec dbo.sp_licensingcalculator
+@ServerType = 'Physical'
+,@LicenseMethod = 'Core'
+,@SQLEdition = 'Enterprise'
+,@SQLVersion = '2014'
+,@HighAvailability = ‘AG’
+,@SoftwareAssurance = 'N'
+,@CoreNumber = 16
+
+This is an example of licensing a physical or virtual server by device or user CALs. This is for a standalone server, includes software assurance, reviews core and memory allocations and uses custom costs.
+
+Exec dbo.sp_licensingcalculator
+@ServerType = 'VM'
+,@LicenseMethod = 'CAL'
+,@SQLEdition = 'Standard'
+,@SQLVersion = '2012'
+,@SoftwareAssurance = 'Y'
+,@MaxMemoryMB = 24000
+,@CoreNumber = 8
+,@CALnumber = 100
+,@CALServerLicenseCost = 1000
+,@CALCost = 400
+,@CALSACost = 125
+
+This is an example of licensing containers by cores with no software assurance, but with custom license cost
+
+Exec dbo.sp_licensingcalculator
+@ServerType = 'Container'
+,@LicenseMethod = 'Core'
+,@SQLEdition = 'Standard'
+,@SQLVersion = '2017'
+,@SoftwareAssurance = 'N'
+,@MaxMemoryMB = 56000
+,@CoreNumber = 8
+,@CoreLicenseCost = 3900
+
+This is an example of licensing physical hosts with Standard edition (which is not typically allowed), but using the Override parameter to still allow you to still get the cost
+
+Exec dbo.sp_licensingcalculator
+@ServerType = 'Host'
+,@LicenseMethod = 'Core'
+,@SQLEdition = 'Standard'
+,@SQLVersion = '2017'
+,@SoftwareAssurance = 'Y'
+,@CoreNumber = 16
+,@Override = 1
