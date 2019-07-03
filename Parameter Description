@@ -1,0 +1,31 @@
+The following is a list of all of the parameters that are available to be used with this script with a brief description of each. It also lists which parameters are optional and what the possible values for each are.
+
+@ServerType – This specifies what type of server you are licensing. You can use VM for virtual machines, Physical for physical servers, Host to license all virtual hosts or Container to license containers.
+
+@LicenseMethod – This specifies how you want to license the server type. Use Core if you want to license by cores or CAL if you want to license by Device or User CALs
+
+@SQLEdition – This specifies which edition of SQL you want to use. The values you can use are Enterprise, Standard, Express or Developer
+
+@SQLVersion – This specifies which version of SQL you want to use. Only use the year for the version you want to select. (2000, 2005, 2008, 2008 R2, 2012, 2014, 2016, 2017, 2019)
+
+@SoftwareAssurance – This specifies whether you want to include Software Assurance. Use Y for yes and N for no.
+
+@HighAvailability – (optional parameter) This specifies what type (if any) of SQL High Availability you are planning to use. The values you can use are AG for Availability groups, Cluster for shared disk cluster, Mirroring for mirroring and LogShipping for log shipping.
+
+@MaxMemoryMB – (optional parameter) This specifies what is the max memory in MB you are planning to use. By entering data here you can analyze the amount of memory you are using to make sure it is compatible with the version\edition of SQL you are running.
+
+@CoreNumber – This specifies the number of cores for the server you are licensing. Even if not licensing by cores, you can still enter a value here and it will analyze it to make sure it is compatible with the version\edition of SQL you are running.
+
+@CoreLicenseCost – (optional parameter) If you know what your core license cost is based on your agreement, you can enter it here. If you do not specify this, it will use MSRP\estimated costs
+
+@CoreSACost – (optional parameter) If you know what your Core software assurance cost is based on your agreement, you can enter it here. If you do not specify this, it will use MSRP\estimated costs. If software assurance cost is baked into your license cost, then select 0 for this value.
+
+@CALnumber – This specifies the number of CALs that you need. Include both Server and Device CALs here. If you license by CAL, then you must have a value here
+
+@CALServerLicenseCost – (optional parameter) If you know what your Server CAL license cost is based on your agreement, you can enter it here. If you do not specify this, it will use MSRP\estimated costs
+
+@CALCost – (optional parameter) If you know what your CAL license cost is based on your agreement, you can enter it here. If you do not specify this, it will use MSRP\estimated costs
+
+@CALSACost – (optional parameter) If you know what your CAL software assurance cost is based on your agreement, you can enter it here. If you do not specify this, it will use MSRP\estimated costs. If software assurance cost is baked into your license cost, then select 0 for this value.
+
+@Override – (optional parameter) If you want to ignore the rules and checks that occur, then set this value to 1. You may want to consider using this if your licensing agreement allows you to license ways differently then what is in the licensing guide. If this is turned on, you will only return your build information with a cost.
