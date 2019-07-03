@@ -1,4 +1,4 @@
-# SQL-Licensing-Calculator
+# SQL Licensing Calculator
 
 The SQL licensing Calculator is a free easy-to-use and independent script that you can start using to help you make better decisions with your licensing, compare different models and avoid costly mistakes. By passing through a few values, you can instantly evaluate what your costs are and review any potential gotcha’s or compliance issues you may not have thought of. There are two results that are returned. The first one is a recap of how you are licensing along with the cost. The second result is any considerations regarding the build or licensing that you need to be mindful of separated out based on criticality (Critical, Warning, Informational) with links for more information.
 
