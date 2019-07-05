@@ -14,7 +14,7 @@ CREATE PROCEDURE [dbo].[sp_licensingcalculator]
  Description: This script allows you calculate your costs for licensing while taking into account the variables associated with licensing. Additionally,
  this script will analyze your builds and let you know if there is anything that you made need to be aware of. 
 
- This script was last updated on 5/16/2019
+ v1.0 - This script was last updated on 5/16/2019
 
  DISCLAIMER: By using this script you agree to do so at your own risk and understand this is not something created by or representative of Microsoft. I highly encourage your to read 
  through the SQL licensing guides and continue working with your licensing providers. Based on years of experience, working with Microsoft and licensed re-sellers on licensing and careful 
